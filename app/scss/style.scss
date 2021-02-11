@@ -4,5 +4,70 @@
 @import 'global';
 
 
+.header{
+  padding: 50px 0;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+}
+
+.menu{
+  &__list{
+    display: flex;
+  }
+  &__list-item + .menu__list-item{
+    padding-left: 30px;
+  }
+  &__list-link{
+    font-family: 'Rubik-Medium', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: $default;  
+  }
+
+
+}
+
+.user-nav{
+  display: flex;
+
+  &__link{
+    position: relative;
+  }
+
+  &__num{
+    font-family: 'DMSans-Medium', sans-serif;
+    font-weight: 500;
+    position: relative;
+    top: -38px;
+    right: -56px;
+    font-size: 10px;
+    color: $default;
+  }
+
+  &__number{
+    font-family: 'DMSans-Medium', sans-serif;
+    font-weight: 500;
+    position: relative;
+    top: -38px;
+    right: -44px;
+    font-size: 10px;
+    color: $default;
+  }
+
+}
+
+#search{
+  margin-right: 20px;
+}
+
+#cart{
+  margin-right: 18px;
+}
+
 
 @import 'media';
