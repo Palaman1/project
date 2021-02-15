@@ -68,7 +68,7 @@
 
 .footer p,
 .footer a{
-  @extend %rubik-500;
+  @extend %rubik-400;
   color: #7b7b7b;
   font-size: 14px;
   line-height: 32px;
@@ -80,7 +80,7 @@
   border-bottom: 1px solid #dae4e9;
   display: flex;
   &__contacts{
-    width: 206px;
+    width: 213px;
     margin-right: 100px;
   }
   &__service{
@@ -151,6 +151,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 34px;
+  margin-bottom: 38px;
   .footer-bottom__nav-list{
     display: flex;
   }
