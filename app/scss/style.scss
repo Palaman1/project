@@ -1,8 +1,248 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
+
+.header{
+  padding: 40px 0;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.menu{
+  &__list{
+    display: flex;
+  }
+  &__list-item + .menu__list-item{
+    padding-left: 30px;
+  }
+  &__list-link{
+    @extend %rubik-500;
+    font-size: 15px;
+    color: $default;  
+  }
+}
+
+.user-nav{
+  display: flex;
+  &__link{
+    position: relative;
+  }
+  &__num{
+    @extend %dmsans-500;
+    position: relative;
+    top: -38px;
+    right: -56px;
+    font-size: 10px;
+    color: $default;
+  }
+  &__number{
+    @extend %dmsans-500;
+    position: relative;
+    top: -38px;
+    right: -44px;
+    font-size: 10px;
+    color: $default;
+  }
+}
+
+#search{
+  margin-right: 20px;
+}
+
+#cart{
+  margin-right: 18px;
+}
+
+.footer p,
+.footer a{
+  @extend %rubik-400;
+  color: #7b7b7b;
+  font-size: 14px;
+  line-height: 32px;
+}
+
+
+.footer-top{
+  padding: 82px 0 76px;
+  border-bottom: 1px solid #dae4e9;
+  display: flex;
+  &__contacts{
+    width: 213px;
+    margin-right: 100px;
+  }
+  &__service{
+    width: 125px;
+    margin-right: 176px;
+  }
+  &__account{
+    width: 100px;
+    margin-right: 200px;
+  }
+  &__item-form{
+    max-width: 270px;
+  }
+  &__logo{
+    margin-bottom: 28px;
+    display: block;
+
+  }
+  &__title{
+    @extend %dmsans-700;
+    color: #1f2044;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 16px auto 16px;
+  }
+  &__adress{
+    line-height: 24px !important;
+  }
+  &__adress,
+  &__phone,
+  &__email{
+    display: block;
+  }
+  &__text{
+    line-height: 24px !important;
+    margin-bottom: 36px;
+  }
+  &__form{
+    display: flex;
+  }
+  &__form-input{
+    background-color: #fef7f0;
+    max-width: 170px;
+    width: 100%;
+    height: 38px;
+    border: none;
+    padding:  12px 14px;
+    &::placeholder{
+      color: #234969;
+      @extend %dmsans-400;
+      font-size: 12px;
+    }
+  }
+  &__form-btn{
+    @extend %btn;
+    @extend %dmsans-400;
+    font-size: 14px;
+    border: none;
+    max-width: 100px;
+    padding: 12px 14px;
+    cursor: pointer;
+  }
+}
+
+
+.footer-bottom{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 34px;
+  margin-bottom: 38px;
+  .footer-bottom__nav-list{
+    display: flex;
+  }
+  .footer-bottom__nav-items{
+    max-width: 68px;
+  }
+  .footer-bottom__nav-items-link{
+    width: 56px;
+    margin-right: 14px;
+    &::after{
+      content: "|";
+      position: absolute;
+      width: 1px;
+      height: 17px;
+      @extend %rubik-500;
+      color: #7b7b7b;
+      font-size: 16px;
+      font-style: normal;
+      line-height: 32px;
+      align-items: flex-end;
+      margin-left: 14px;
+    }
+  }
+}
+
+.top-slider{
+  background-color: $bg;
+  padding-top: 0;
+  &__item{
+    display: flex !important;
+    justify-content: space-between;
+    padding: 220px 298px 204px;
+  }
+  &__title{
+    max-width: 470px;
+    font-size: 72px;
+    line-height: 70px;
+    color: $title;
+    @extend %rubik-500;
+    margin-bottom: 32px;
+  }
+  &__text{
+    max-width: 370px;
+    font-size: 18px;
+    line-height: 30px;
+    color: $default;
+    @extend %rubik-400;
+    margin-bottom: 58px;
+  }
+  &__link{
+    @extend %btn;
+  }
+  &__img{
+    margin-top: 56px;
+  }
+  &::before{
+    content: url(../images/slider/circle.png);
+    position: absolute;
+    right: 184px;
+    top: 242px;
+  }
+  .slick-dots{
+    display: flex;
+    justify-content: center;
+
+    li{
+      margin-right: 10px;
+      button{
+        padding: 0;
+        background-color: #fde3cc;
+        width: 29px;
+        height: 29px;;
+        border-radius: 50%;
+        border: none;
+        margin-bottom: 44px;
+        cursor: pointer;
+        @extend %rubik-500;
+        font-size: 11px;
+        line-height: 9px;
+        color: $title;
+      }
+      &.slick-active{
+        button{
+          background-color: #fff;
+          border-radius: 50%;
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+.link-arrow{
+  color: #fff;
+  font-size: 15px;
+  line-height: 12px;
+  @extend %rubik-500;
+  margin-left: 52px;
+}
 
 
 @import 'media';
