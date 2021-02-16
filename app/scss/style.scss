@@ -1,18 +1,17 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 
 .header{
-  padding: 50px 0;
+  padding: 40px 0;
   &__inner{
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-
-
 }
 
 .menu{
@@ -27,17 +26,13 @@
     font-size: 15px;
     color: $default;  
   }
-
-
 }
 
 .user-nav{
   display: flex;
-
   &__link{
     position: relative;
   }
-
   &__num{
     @extend %dmsans-500;
     position: relative;
@@ -46,7 +41,6 @@
     font-size: 10px;
     color: $default;
   }
-
   &__number{
     @extend %dmsans-500;
     position: relative;
@@ -55,7 +49,6 @@
     font-size: 10px;
     color: $default;
   }
-
 }
 
 #search{
@@ -135,15 +128,14 @@
     }
   }
   &__form-btn{
-    color: #f3f6f8;
+    @extend %btn;
     @extend %dmsans-400;
     font-size: 14px;
     border: none;
-    background-color: #a3bbc8;
     max-width: 100px;
     padding: 12px 14px;
+    cursor: pointer;
   }
-
 }
 
 
@@ -175,10 +167,82 @@
       margin-left: 14px;
     }
   }
-
-
-
-
 }
+
+.top-slider{
+  background-color: $bg;
+  padding-top: 0;
+  &__item{
+    display: flex !important;
+    justify-content: space-between;
+    padding: 220px 298px 204px;
+  }
+  &__title{
+    max-width: 470px;
+    font-size: 72px;
+    line-height: 70px;
+    color: $title;
+    @extend %rubik-500;
+    margin-bottom: 32px;
+  }
+  &__text{
+    max-width: 370px;
+    font-size: 18px;
+    line-height: 30px;
+    color: $default;
+    @extend %rubik-400;
+    margin-bottom: 58px;
+  }
+  &__link{
+    @extend %btn;
+  }
+  &__img{
+    margin-top: 56px;
+  }
+  &::before{
+    content: url(../images/slider/circle.png);
+    position: absolute;
+    right: 184px;
+    top: 242px;
+  }
+  .slick-dots{
+    display: flex;
+    justify-content: center;
+
+    li{
+      margin-right: 10px;
+      button{
+        padding: 0;
+        background-color: #fde3cc;
+        width: 29px;
+        height: 29px;;
+        border-radius: 50%;
+        border: none;
+        margin-bottom: 44px;
+        cursor: pointer;
+        @extend %rubik-500;
+        font-size: 11px;
+        line-height: 9px;
+        color: $title;
+      }
+      &.slick-active{
+        button{
+          background-color: #fff;
+          border-radius: 50%;
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+.link-arrow{
+  color: #fff;
+  font-size: 15px;
+  line-height: 12px;
+  @extend %rubik-500;
+  margin-left: 52px;
+}
+
 
 @import 'media';
