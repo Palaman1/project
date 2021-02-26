@@ -1,7 +1,8 @@
 $default: #436372;
 $title: #243f4d;
 $bg: #fcd7b6;
-$btn: #a3bbc8; 
+$btn: #a3bbc8;
+$titles: #191919;
 
 %rubik-500{
   font-family: 'Rubik-Medium', sans-serif;
@@ -39,3 +40,10 @@ $btn: #a3bbc8;
   background-color: $btn;
   @extend %rubik-500;
 }
+
+ @function max($numbers...) {
+    @return m#{a}x(#{$numbers});
+ }
+ @function min($numbers...) {
+    @return m#{i}n(#{$numbers});
+ }
