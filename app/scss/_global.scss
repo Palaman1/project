@@ -43,7 +43,40 @@ body{
   padding: 0;
 }
 
-
+.breadcrumbs{
+  display: inline-flex;
+  justify-content: center;
+  margin-left: 18px;
+  &__list{
+    display: flex;
+  }
+  &__item{
+    color: #737980;
+    padding-right: 18px;
+    position: relative;
+    margin-top: 10px;
+    &::after{
+      content: "/";
+      position: absolute;
+      font-size: 14px;
+      line-height: 24px;
+      @extend %rubik-400;
+      right: 6px;
+    }
+    &:last-child{
+      color: #1a1a1a;
+      &::after{
+        display: none;
+      }
+    }
+  }
+  &__link{
+    color: inherit;
+    font-size: 14px;
+    line-height: 24px;
+    @extend %rubik-400;
+  }
+}
 
 
 

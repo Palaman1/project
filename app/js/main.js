@@ -8,5 +8,8 @@ $(function(){
     autoplaySpeed: 2000
   });
 
+  var mixer = mixitup('.week__content');
+
+  var mixer = mixitup('.new__content');
+
 });
-top-slider__inner
