@@ -1,7 +1,8 @@
 html,
 body{
   height: 100%;
-
+  margin: 0;
+  padding: 0;
 }
 
 body{
@@ -15,6 +16,8 @@ body{
 
 .main{
   flex-grow: 1;
+  margin: 0;
+  padding: 0;
 }
 
 .filter-btn{

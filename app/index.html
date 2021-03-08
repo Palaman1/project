@@ -13,66 +13,77 @@
   <header class="header">
     <div class="container__top">
       <div class="header__inner">
-        <a class="logo" href="#">
-          <img class="logo__img" src="images/logo.png" alt="logo">
+        <a class="logo" href="index.html">
+          <img class="logo__img" src="images/logo.png" alt="logo" title="Glee.com">
         </a>
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">
+              <a class="menu__list-link" href="#" title="Home">
                 Home +
                 <ul class="submenu-home">
-                  <li class="submenu-home__link submenu-home__link-one"><a class="submenu-home__link-a" href="">Profile</a></li>
+                  <li class="submenu-home__link submenu-home__link-one"><a class="submenu-home__link-a"
+                      href="">Profile</a></li>
                   <li class="submenu-home__link"><a href="">Special offers</a></li>
                 </ul>
               </a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">
+              <a class="menu__list-link" href="about.html" title="About">
                 About
               </a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">
+              <a class="menu__list-link" href="#" title="Services">
                 Services
               </a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">
+              <a class="menu__list-link" href="#" title="Pages">
                 Pages +
                 <ul class="submenu-home">
-                  <li class="submenu-home__link submenu-home__link-one"><a class="submenu-home__link-a" href="">page1</a></li>
+                  <li class="submenu-home__link submenu-home__link-one"><a class="submenu-home__link-a"
+                      href="">page1</a></li>
                   <li class="submenu-home__link"><a href="">page2</a></li>
                 </ul>
               </a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">
+              <a class="menu__list-link" href="#" title="News">
                 News
               </a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">
+              <a class="menu__list-link" href="#" title="Contact">
                 Contact
               </a>
             </li>
           </ul>
         </nav>
         <div class="user-nav">
-          <a class="user-nav__link" id="search" href="#">
-            <img class="search" src="images/icons/search.png" alt="поиск">
+          <a class="user-nav__link user-nav__link__search" href="#">
+            <img class="search" src="images/icons/search.png" alt="search" title="Search">
           </a>
-          <a class="user-nav__link" id="liked" href="#">
-            <img class="liked" src="images/icons/liked.png" alt="избраное">
+          <a class="user-nav__link user-nav__link__liked" href="#">
+            <img class="liked" src="images/icons/liked.png" alt="liked" title="Liked">
             <span class="user-nav__num">0</span>
           </a>
-          <a class="user-nav__link" id="cart" href="#">
-            <img class="cart" src="images/icons/cart.png" alt="корзина">
+          <a class="user-nav__link user-nav__link__cart" href="#">
+            <img class="cart" src="images/icons/cart.png" alt="cart" title="Cart">
             <span class="user-nav__number">0</span>
           </a>
-          <a class="user-nav__link" href="#">
-            <img class="menu-ico" src="images/icons/menu.png" alt="меню">
-          </a>
+          <button class="user-nav__link user-nav__link__btn" href="#">
+            <img class="menu-ico" src="images/icons/menu.png" alt="menu" title="Menu">
+          </button>
+          <div class="user-nav__menu">
+            <ul class="user-nav__menu__list">
+              <li class="user-nav__menu__list__item">Home</li>
+              <li class="user-nav__menu__list__item">About</li>
+              <li class="user-nav__menu__list__item">Services</li>
+              <li class="user-nav__menu__list__item">News</li>
+              <li class="user-nav__menu__list__item">Contact</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -89,7 +100,7 @@
               <p class="top-slider__text">
                 Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
               </p>
-              <a class="top-slider__link" href="#">
+              <a class="top-slider__link" href="#" title="Shop Now">
                 Shop Now
                 <span class="link-arrow">→</span>
               </a>
@@ -104,7 +115,7 @@
               <p class="top-slider__text">
                 Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
               </p>
-              <a class="top-slider__link" href="#">
+              <a class="top-slider__link" href="#" title="Shop Now">
                 Shop Now
                 <span class="link-arrow">→</span>
               </a>
@@ -119,7 +130,7 @@
               <p class="top-slider__text">
                 Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
               </p>
-              <a class="top-slider__link" href="#">
+              <a class="top-slider__link" href="#" title="Shop Now">
                 Shop Now
                 <span class="link-arrow">→</span>
               </a>
@@ -222,12 +233,14 @@
                     </a>
                   </div>
                 </div>
-                <h4 class="content-item__title">
-                  Wooden radio
-                </h4>
-                <p class="content-item__price">
-                  $29.00
-                </p>
+                <a class="content-item__more" href="#">
+                  <h4 class="content-item__title">
+                    Wooden radio
+                  </h4>
+                  <p class="content-item__price">
+                    $29.00
+                  </p>
+                </a>
               </div>
               <div class="content-item mix category-chairs">
                 <div class="content-item__img-box">
@@ -253,12 +266,14 @@
                     </a>
                   </div>
                 </div>
-                <h4 class="content-item__title">
-                  Wooden chair
-                </h4>
-                <p class="content-item__price">
-                  $29.00
-                </p>
+                <a class="content-item__more" href="#">
+                  <h4 class="content-item__title">
+                    Wooden chair
+                  </h4>
+                  <p class="content-item__price">
+                    $29.00
+                  </p>
+                </a>
               </div>
               <div class="content-item mix category-chairs">
                 <div class="content-item__img-box">
@@ -284,12 +299,14 @@
                     </a>
                   </div>
                 </div>
-                <h4 class="content-item__title">
-                  White chair
-                </h4>
-                <p class="content-item__price">
-                  $29.00
-                </p>
+                <a class="content-item__more" href="#">
+                  <h4 class="content-item__title">
+                    White chair
+                  </h4>
+                  <p class="content-item__price">
+                    $29.00
+                  </p>
+                </a>
               </div>
               <div class="content-item mix category-decor">
                 <div class="content-item__img-box">
@@ -315,12 +332,14 @@
                     </a>
                   </div>
                 </div>
-                <h4 class="content-item__title">
-                  Retro table
-                </h4>
-                <p class="content-item__price">
-                  $29.00
-                </p>
+                <a class="content-item__more" href="#">
+                  <h4 class="content-item__title">
+                    Retro table
+                  </h4>
+                  <p class="content-item__price">
+                    $29.00
+                  </p>
+                </a>
               </div>
               <div class="content-item mix category-furnitures">
                 <div class="content-item__img-box">
@@ -346,12 +365,14 @@
                     </a>
                   </div>
                 </div>
-                <h4 class="content-item__title">
-                  Wooden radio
-                </h4>
-                <p class="content-item__price">
-                  $29.00
-                </p>
+                <a class="content-item__more" href="#">
+                  <h4 class="content-item__title">
+                    Wooden radio
+                  </h4>
+                  <p class="content-item__price">
+                    $29.00
+                  </p>
+                </a>
               </div>
               <div class="content-item mix category-chairs">
                 <div class="content-item__img-box">
@@ -377,12 +398,14 @@
                     </a>
                   </div>
                 </div>
-                <h4 class="content-item__title">
-                  Wooden chair
-                </h4>
-                <p class="content-item__price">
-                  $29.00
-                </p>
+                <a class="content-item__more" href="#">
+                  <h4 class="content-item__title">
+                    Wooden chair
+                  </h4>
+                  <p class="content-item__price">
+                    $29.00
+                  </p>
+                </a>
               </div>
               <div class="content-item mix category-chairs">
                 <div class="content-item__img-box">
@@ -408,12 +431,14 @@
                     </a>
                   </div>
                 </div>
-                <h4 class="content-item__title">
-                  White chair
-                </h4>
-                <p class="content-item__price">
-                  $29.00
-                </p>
+                <a class="content-item__more" href="#">
+                  <h4 class="content-item__title">
+                    White chair
+                  </h4>
+                  <p class="content-item__price">
+                    $29.00
+                  </p>
+                </a>
               </div>
               <div class="content-item mix category-decor">
                 <div class="content-item__img-box">
@@ -439,43 +464,45 @@
                     </a>
                   </div>
                 </div>
-                <h4 class="content-item__title">
-                  Retro table
-                </h4>
-                <p class="content-item__price">
-                  $29.00
-                </p>
+                <a class="content-item__more" href="#">
+                  <h4 class="content-item__title">
+                    Retro table
+                  </h4>
+                  <p class="content-item__price">
+                    $29.00
+                  </p>
+                </a>
               </div>
             </div>
           </div>
         </div>
         <div class="container__top">
-            <div class="week__bottom">
-              <div class="week__bottom__element week__bottom__element-one">
-                <h3 class="element-title">
-                  Mirum Notare Tellus
-                </h3>
-                <p class="element-text">
-                  LEDCornBulb Lamp 5W 7W 10W 12W 15W E26 E27LEDCornLight
-                </p>
-                <a class="element-link" href="#">
-                  View More
-                  <span class="element-arrow">→</span>
-                </a>
-              </div>
-              <div class="week__bottom__element week__bottom__element-two">
-                <h3 class="element-title">
-                  Malesuada Tempor Euismod
-                </h3>
-                <p class="element-text">
-                  50W 8000lm Compact Size for HID StreetLightReplacementLEDCornLight
-                </p>
-                <a class="element-link" href="#">
-                  View More
-                  <span class="element-arrow">→</span>
-                </a>
-              </div>
+          <div class="week__bottom">
+            <div class="week__bottom__element week__bottom__element-one">
+              <h3 class="element-title">
+                Mirum Notare Tellus
+              </h3>
+              <p class="element-text">
+                LEDCornBulb Lamp 5W 7W 10W 12W 15W E26 E27LEDCornLight
+              </p>
+              <a class="element-link" href="#" title="View More">
+                View More
+                <span class="element-arrow">→</span>
+              </a>
             </div>
+            <div class="week__bottom__element week__bottom__element-two">
+              <h3 class="element-title">
+                Malesuada Tempor Euismod
+              </h3>
+              <p class="element-text">
+                50W 8000lm Compact Size for HID StreetLightReplacementLEDCornLight
+              </p>
+              <a class="element-link" href="#" title="View More">
+                View More
+                <span class="element-arrow">→</span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -502,7 +529,8 @@
               <p class="new__content__item__type">
                 Classic
               </p>
-              <img class="new__content__item__image new__content__item__image-one" src="images/newdesign/new1.png" alt="beatflatpendantblack">
+              <img class="new__content__item__image new__content__item__image-one" src="images/newdesign/new1.png"
+                alt="beatflatpendantblack">
             </a>
           </div>
           <div class="new__content__item mix category-decor">
@@ -513,7 +541,8 @@
               <p class="new__content__item__type">
                 Classic
               </p>
-              <img class="new__content__item__image new__content__item__image-two" src="images/newdesign/new2.png" alt="lampesurpiedsbamboo">
+              <img class="new__content__item__image new__content__item__image-two" src="images/newdesign/new2.png"
+                alt="lampesurpiedsbamboo">
             </a>
           </div>
           <div class="new__content__item mix category-chairs">
@@ -524,7 +553,8 @@
               <p class="new__content__item__type">
                 Classic
               </p>
-              <img class="new__content__item__image new__content__item__image-three" src="images/newdesign/new3.png" alt="rattanrockingchair">
+              <img class="new__content__item__image new__content__item__image-three" src="images/newdesign/new3.png"
+                alt="rattanrockingchair">
             </a>
           </div>
           <div class="new__content__item mix category-decor">
@@ -535,7 +565,8 @@
               <p class="new__content__item__type">
                 Classic
               </p>
-              <img class="new__content__item__image new__content__item__image-four" src="images/newdesign/new4.png" alt="rattanrockingchair">
+              <img class="new__content__item__image new__content__item__image-four" src="images/newdesign/new4.png"
+                alt="rattanrockingchair">
             </a>
           </div>
           <div class="new__content__item mix category-chairs">
@@ -546,7 +577,8 @@
               <p class="new__content__item__type">
                 Classic
               </p>
-              <img class="new__content__item__image new__content__item__image-five" src="images/newdesign/new5.png" alt="rattanrockingchair">
+              <img class="new__content__item__image new__content__item__image-five" src="images/newdesign/new5.png"
+                alt="rattanrockingchair">
             </a>
           </div>
           <div class="new__content__item mix category-decor">
@@ -557,15 +589,16 @@
               <p class="new__content__item__type">
                 Classic
               </p>
-              <img class="new__content__item__image new__content__item__image-six" src="images/newdesign/new6.png" alt="lampresurpiedsbamboo">
+              <img class="new__content__item__image new__content__item__image-six" src="images/newdesign/new6.png"
+                alt="lampresurpiedsbamboo">
             </a>
           </div>
         </div>
       </div>
       <div class="new__video">
-          <a class="new__video-link" data-fancybox href="https://www.youtube.com/watch?v=5_j9F-yZh04">
+        <a class="new__video-link" data-fancybox href="https://www.youtube.com/watch?v=5_j9F-yZh04">
           <img src="images/play.png" alt="play">
-          </a>
+        </a>
       </div>
     </section>
     <section class="articles">
@@ -574,9 +607,9 @@
           <h2 class="articles-top__title">
             Our Insights & Articles
           </h2>
-            <a href="#" class="articles-top__link">
-              <p class="articles-top__text">
-                View All
+          <a href="#" class="articles-top__link">
+            <p class="articles-top__text">
+              View All
               <span class="articles-top__link-span">
                 <svg width="7px" height="12px">
                   <path fill-rule="evenodd" fill="rgb(38, 38, 38)"
@@ -584,7 +617,7 @@
                 </svg>
               </span>
             </p>
-          </a>  
+          </a>
         </div>
         <div class="articles-content">
           <div class="articles__item articles__item-image">
@@ -608,10 +641,10 @@
             </a>
             <a class="articles__item-link-one" href="#">
               <h5 class="articles__item-title">
-              Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
               </h5>
             </a>
-            <div class="articles__item-details">  
+            <div class="articles__item-details">
               <p class="articles__item-time">
                 • 28 JANUARY, 2020
               </p>
@@ -660,9 +693,11 @@
       </div>
       <div class="articles__partners">
         <img class="articles__partners-image" src="images/partners/partner1.png" alt="partner">
-        <img class="articles__partners-image articles__partners-image__two" src="images/partners/partner2.png" alt="partner">
+        <img class="articles__partners-image articles__partners-image__two" src="images/partners/partner2.png"
+          alt="partner">
         <img class="articles__partners-image" src="images/partners/partner3.png" alt="partner">
-        <img class="articles__partners-image articles__partners-image__four" src="images/partners/partner4.png" alt="partner">
+        <img class="articles__partners-image articles__partners-image__four" src="images/partners/partner4.png"
+          alt="partner">
         <img class="articles__partners-image" src="images/partners/partner5.png" alt="partner">
       </div>
     </section>
@@ -704,7 +739,7 @@
               </a>
             </li>
             <li class="footer-top__items">
-              <a class="footer-top__link" href="#">
+              <a class="footer-top__link" href="terms.html">
                 Terms & Condition
               </a>
             </li>
