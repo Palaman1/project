@@ -56,9 +56,17 @@ $titles: #191919;
   @extend %rubik-500;
 }
 
- @function max($numbers...) {
-    @return m#{a}x(#{$numbers});
- }
- @function min($numbers...) {
-    @return m#{i}n(#{$numbers});
- }
+%checkbox-hidden{
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
