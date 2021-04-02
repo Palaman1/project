@@ -74,16 +74,26 @@
             <img class="cart" src="images/icons/cart.png" alt="корзина">
             <span class="user-nav__number">0</span>
           </a>
-          <button class="user-nav__link user-nav__link__btn" href="#">
+          <button class="user-nav__link user-nav__link__btn" type="button">
             <img class="menu-ico" src="images/icons/menu.png" alt="menu" title="Menu">
           </button>
           <div class="user-nav__menu">
             <ul class="user-nav__menu__list">
-              <li class="user-nav__menu__list__item">Home</li>
-              <li class="user-nav__menu__list__item">About</li>
-              <li class="user-nav__menu__list__item">Services</li>
-              <li class="user-nav__menu__list__item">News</li>
-              <li class="user-nav__menu__list__item">Contact</li>
+              <li class="user-nav__menu__list__item">
+                <a class="user-nav__menu-link" href="index.html">Home</a>
+              </li>
+              <li class="user-nav__menu__list__item">
+                <a class="user-nav__menu-link" href="about.html">About</a>
+              </li>
+              <li class="user-nav__menu__list__item">
+                <a class="user-nav__menu-link" href="#">Services</a>
+              </li>
+              <li class="user-nav__menu__list__item">
+                <a class="user-nav__menu-link" href="#">News</a>
+              </li>
+              <li class="user-nav__menu__list__item">
+                <a class="user-nav__menu-link" href="#">Contact</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -214,7 +224,7 @@
               RECENT PRODUCTS
             </h3>
             <div class="filter-recent__item">
-              <a class="filter-recent__item__link" href="#">
+              <a class="filter-recent__item__link" href="product_details.html">
                 <img src="images/recent/r1.png" alt="product 1" class="filter-recent__item__image">
                 <h5 class="filter-recent__item__title">
                   Pendant lamp
@@ -226,7 +236,7 @@
               </a>
             </div>
             <div class="filter-recent__item">
-              <a class="filter-recent__item__link" href="#">
+              <a class="filter-recent__item__link" href="product_details.html">
                 <img src="images/recent/r2.png" alt="product 1" class="filter-recent__item__image">
                 <h5 class="filter-recent__item__title">
                   Pendant lamp
@@ -238,7 +248,7 @@
               </a>
             </div>
             <div class="filter-recent__item">
-              <a class="filter-recent__item__link" href="#">
+              <a class="filter-recent__item__link" href="product_details.html">
                 <img src="images/recent/r3.png" alt="product 1" class="filter-recent__item__image">
                 <h5 class="filter-recent__item__title">
                   Pendant lamp
@@ -254,7 +264,7 @@
         <section class="rated">
           <div class="rated__items">
             <div class="rated__item">
-              <a class="rated__item__more" href="#">
+              <a class="rated__item__more" href="product_details.html">
                 <div class="rated__item__img-box">
                   <img class="rated__item__images" src="images/weekproducts/pow1.png" alt="wooden radio">
                 </div>
@@ -289,7 +299,7 @@
               </div>
             </div>
             <div class="rated__item">
-              <a class="rated__item__more" href="#">
+              <a class="rated__item__more" href="product_details.html">
                 <div class="rated__item__img-box">
                   <img class="rated__item__images" src="images/weekproducts/pow2.png" alt="wooden radio">
                 </div>
@@ -324,7 +334,7 @@
               </div>
             </div>
             <div class="rated__item">
-              <a class="rated__item__more" href="#">
+              <a class="rated__item__more" href="product_details.html">
                 <div class="rated__item__img-box">
                   <img class="rated__item__images" src="images/weekproducts/pow3.png" alt="wooden radio">
                 </div>
@@ -359,7 +369,7 @@
               </div>
             </div>
             <div class="rated__item">
-              <a class="rated__item__more" href="#">
+              <a class="rated__item__more" href="product_details.html">
                 <div class="rated__item__img-box">
                   <img class="rated__item__images" src="images/weekproducts/pow4.png" alt="wooden radio">
                 </div>
@@ -386,7 +396,7 @@
                   </svg>
                 </a>
                 <a class="rated__item__like" href="#">
-                  <svg width="22px" height="20px">
+                  <sv g width="22px" height="20px">
                     <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
                       d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z" />
                   </svg>
@@ -450,7 +460,7 @@
               </a>
             </li>
             <li class="footer-top__items">
-              <a class="footer-top__link" href="#">
+              <a class="footer-top__link" href="blog.html">
                 Our Blog
               </a>
             </li>
@@ -525,7 +535,7 @@
               <a class="about-link" href="#">About</a>
             </li>
             <li class="footer-bottom__nav-items footer-bottom__nav-items-link">
-              <a class="blog-link" href="#">Blog</a>
+              <a class="blog-link" href="blog.html">Blog</a>
             </li>
             <li class="footer-bottom__nav-items">
               <a class="contact-link" href="#">Contact</a>

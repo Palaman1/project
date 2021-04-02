@@ -72,16 +72,26 @@
             <img class="cart" src="images/icons/cart.png" alt="cart" title="Cart">
             <span class="user-nav__number">0</span>
           </a>
-          <button class="user-nav__link user-nav__link__btn" href="#">
+          <button class="user-nav__link user-nav__link__btn" type="button">
             <img class="menu-ico" src="images/icons/menu.png" alt="menu" title="Menu">
           </button>
           <div class="user-nav__menu">
             <ul class="user-nav__menu__list">
-              <li class="user-nav__menu__list__item">Home</li>
-              <li class="user-nav__menu__list__item">About</li>
-              <li class="user-nav__menu__list__item">Services</li>
-              <li class="user-nav__menu__list__item">News</li>
-              <li class="user-nav__menu__list__item">Contact</li>
+              <li class="user-nav__menu__list__item">
+                <a class="user-nav__menu-link" href="index.html">Home</a>
+              </li>
+              <li class="user-nav__menu__list__item">
+                <a class="user-nav__menu-link" href="about.html">About</a>
+              </li>
+              <li class="user-nav__menu__list__item">
+                <a class="user-nav__menu-link" href="#">Services</a>
+              </li>
+              <li class="user-nav__menu__list__item">
+                <a class="user-nav__menu-link" href="#">News</a>
+              </li>
+              <li class="user-nav__menu__list__item">
+                <a class="user-nav__menu-link" href="#">Contact</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -200,11 +210,11 @@
               Products of the week
             </h2>
             <div class="week__top__filter">
-              <button class="week__top-btn filter-btn" data-filter="all">All</button>
-              <button class="week__top-btn filter-btn" data-filter=".category-furnitures">Furnitures</button>
-              <button class="week__top-btn filter-btn" data-filter=".category-chairs">Chairs</button>
-              <button class="week__top-btn filter-btn" data-filter=".category-lighting">Lighting</button>
-              <button class="week__top-btn filter-btn" data-filter=".category-decor">Decor</button>
+              <button class="week__top-btn filter-btn" data-filter="all" type="button">All</button>
+              <button class="week__top-btn filter-btn" data-filter=".category-furnitures" type="button">Furnitures</button>
+              <button class="week__top-btn filter-btn" data-filter=".category-chairs" type="button">Chairs</button>
+              <button class="week__top-btn filter-btn" data-filter=".category-lighting" type="button">Lighting</button>
+              <button class="week__top-btn filter-btn" data-filter=".category-decor" type="button">Decor</button>
             </div>
           </div>
           <div class="week__content">
@@ -213,7 +223,7 @@
                 <div class="content-item__img-box">
                   <img class="content-item__images" src="images/weekproducts/pow1.png" alt="wooden radio">
                   <div class="content-item__link-box">
-                    <a class="content-item__link" href="#">
+                    <a class="content-item__link" href="product_details.html">
                       <svg width="20px" height="20px">
                         <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
                           d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 15.000,3.357 15.000,7.499 C15.000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z" />
@@ -233,7 +243,7 @@
                     </a>
                   </div>
                 </div>
-                <a class="content-item__more" href="#">
+                <a class="content-item__more" href="product_details.html">
                   <h4 class="content-item__title">
                     Wooden radio
                   </h4>
@@ -246,7 +256,7 @@
                 <div class="content-item__img-box">
                   <img class="content-item__images" src="images/weekproducts/pow2.png" alt="wooden chair">
                   <div class="content-item__link-box">
-                    <a class="content-item__link" href="#">
+                    <a class="content-item__link" href="product_details.html">
                       <svg width="20px" height="20px">
                         <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
                           d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 15.000,3.357 15.000,7.499 C15.000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z" />
@@ -266,7 +276,7 @@
                     </a>
                   </div>
                 </div>
-                <a class="content-item__more" href="#">
+                <a class="content-item__more" href="product_details.html">
                   <h4 class="content-item__title">
                     Wooden chair
                   </h4>
@@ -279,7 +289,7 @@
                 <div class="content-item__img-box">
                   <img class="content-item__images" src="images/weekproducts/pow3.png" alt="white chair">
                   <div class="content-item__link-box">
-                    <a class="content-item__link" href="#">
+                    <a class="content-item__link" href="product_details.html">
                       <svg width="20px" height="20px">
                         <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
                           d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 15.000,3.357 15.000,7.499 C15.000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z" />
@@ -299,7 +309,7 @@
                     </a>
                   </div>
                 </div>
-                <a class="content-item__more" href="#">
+                <a class="content-item__more" href="product_details.html">
                   <h4 class="content-item__title">
                     White chair
                   </h4>
@@ -312,7 +322,7 @@
                 <div class="content-item__img-box">
                   <img class="content-item__images" src="images/weekproducts/pow4.png" alt="retro table">
                   <div class="content-item__link-box">
-                    <a class="content-item__link" href="#">
+                    <a class="content-item__link" href="product_details.html">
                       <svg width="20px" height="20px">
                         <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
                           d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 15.000,3.357 15.000,7.499 C15.000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z" />
@@ -332,7 +342,7 @@
                     </a>
                   </div>
                 </div>
-                <a class="content-item__more" href="#">
+                <a class="content-item__more" href="product_details.html">
                   <h4 class="content-item__title">
                     Retro table
                   </h4>
@@ -345,7 +355,7 @@
                 <div class="content-item__img-box">
                   <img class="content-item__images" src="images/weekproducts/pow5.png" alt="wooden radio">
                   <div class="content-item__link-box">
-                    <a class="content-item__link" href="#">
+                    <a class="content-item__link" href="product_details.html">
                       <svg width="20px" height="20px">
                         <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
                           d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 15.000,3.357 15.000,7.499 C15.000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z" />
@@ -365,7 +375,7 @@
                     </a>
                   </div>
                 </div>
-                <a class="content-item__more" href="#">
+                <a class="content-item__more" href="product_details.html">
                   <h4 class="content-item__title">
                     Wooden radio
                   </h4>
@@ -378,7 +388,7 @@
                 <div class="content-item__img-box">
                   <img class="content-item__images" src="images/weekproducts/pow6.png" alt="wooden chair">
                   <div class="content-item__link-box">
-                    <a class="content-item__link" href="#">
+                    <a class="content-item__link" href="product_details.html">
                       <svg width="20px" height="20px">
                         <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
                           d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 15.000,3.357 15.000,7.499 C15.000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z" />
@@ -398,7 +408,7 @@
                     </a>
                   </div>
                 </div>
-                <a class="content-item__more" href="#">
+                <a class="content-item__more" href="product_details.html">
                   <h4 class="content-item__title">
                     Wooden chair
                   </h4>
@@ -411,7 +421,7 @@
                 <div class="content-item__img-box">
                   <img class="content-item__images" src="images/weekproducts/pow7.png" alt="white chair">
                   <div class="content-item__link-box">
-                    <a class="content-item__link" href="#">
+                    <a class="content-item__link" href="product_details.html">
                       <svg width="20px" height="20px">
                         <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
                           d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 15.000,3.357 15.000,7.499 C15.000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z" />
@@ -431,7 +441,7 @@
                     </a>
                   </div>
                 </div>
-                <a class="content-item__more" href="#">
+                <a class="content-item__more" href="product_details.html">
                   <h4 class="content-item__title">
                     White chair
                   </h4>
@@ -444,7 +454,7 @@
                 <div class="content-item__img-box">
                   <img class="content-item__images" src="images/weekproducts/pow8.png" alt="retro table">
                   <div class="content-item__link-box">
-                    <a class="content-item__link" href="#">
+                    <a class="content-item__link" href="product_details.html">
                       <svg width="20px" height="20px">
                         <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
                           d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 15.000,3.357 15.000,7.499 C15.000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z" />
@@ -464,7 +474,7 @@
                     </a>
                   </div>
                 </div>
-                <a class="content-item__more" href="#">
+                <a class="content-item__more" href="product_details.html">
                   <h4 class="content-item__title">
                     Retro table
                   </h4>
@@ -485,7 +495,7 @@
               <p class="element-text">
                 LEDCornBulb Lamp 5W 7W 10W 12W 15W E26 E27LEDCornLight
               </p>
-              <a class="element-link" href="#" title="View More">
+              <a class="element-link" href="product_details.html" title="View More">
                 View More
                 <span class="element-arrow">→</span>
               </a>
@@ -497,7 +507,7 @@
               <p class="element-text">
                 50W 8000lm Compact Size for HID StreetLightReplacementLEDCornLight
               </p>
-              <a class="element-link" href="#" title="View More">
+              <a class="element-link" href="product_details.html" title="View More">
                 View More
                 <span class="element-arrow">→</span>
               </a>
@@ -513,16 +523,16 @@
             New Design
           </h2>
           <div class="new__filter">
-            <button class="new__top__btn filter-btn" data-filter="all">All</button>
-            <button class="new__top__btn filter-btn" data-filter=".category-furnitures">Furnitures</button>
-            <button class="new__top__btn filter-btn" data-filter=".category-chairs">Chairs</button>
-            <button class="new__top__btn filter-btn" data-filter=".category-lighting">Lighting</button>
-            <button class="new__top__btn filter-btn" data-filter=".category-decor">Decor</button>
+            <button class="new__top__btn filter-btn mixitup-control-active" data-filter="all" type="button" checked>All</button>
+            <button class="new__top__btn filter-btn" data-filter=".category-furnitures" type="button">Furnitures</button>
+            <button class="new__top__btn filter-btn" data-filter=".category-chairs" type="button">Chairs</button>
+            <button class="new__top__btn filter-btn" data-filter=".category-lighting" type="button">Lighting</button>
+            <button class="new__top__btn filter-btn" data-filter=".category-decor" type="button">Decor</button>
           </div>
         </div>
         <div class="new__content">
           <div class="new__content__item mix category-decor">
-            <a class="new__content__item-link" href="#">
+            <a class="new__content__item-link" href="product_details.html">
               <h4 class="new__content__item__title">
                 Beat Flat Pendant Black
               </h4>
@@ -534,7 +544,7 @@
             </a>
           </div>
           <div class="new__content__item mix category-decor">
-            <a class="new__content_item-link" href="#">
+            <a class="new__content_item-link" href="product_details.html">
               <h4 class="new__content__item__title">
                 Lampe Sur Pieds Bamboo
               </h4>
@@ -546,7 +556,7 @@
             </a>
           </div>
           <div class="new__content__item mix category-chairs">
-            <a class="new__content_item-link" href="#">
+            <a class="new__content_item-link" href="product_details.html">
               <h4 class="new__content__item__title">
                 Rattan Rocking Chair
               </h4>
@@ -558,7 +568,7 @@
             </a>
           </div>
           <div class="new__content__item mix category-decor">
-            <a class="new__content_item-link" href="#">
+            <a class="new__content_item-link" href="product_details.html">
               <h4 class="new__content__item__title">
                 Rattan Rocking Chair
               </h4>
@@ -570,7 +580,7 @@
             </a>
           </div>
           <div class="new__content__item mix category-chairs">
-            <a class="new__content__item-link" href="#">
+            <a class="new__content__item-link" href="product_details.html">
               <h4 class="new__content__item__title">
                 Rattan Rocking Chair
               </h4>
@@ -582,7 +592,7 @@
             </a>
           </div>
           <div class="new__content__item mix category-decor">
-            <a class="new__content__item-link" href="#">
+            <a class="new__content__item-link" href="product_details.html">
               <h4 class="new__content__item__title">
                 Lampe Sur Pieds Bamboo
               </h4>
@@ -729,7 +739,7 @@
               </a>
             </li>
             <li class="footer-top__items">
-              <a class="footer-top__link" href="#">
+              <a class="footer-top__link" href="blog.html">
                 Our Blog
               </a>
             </li>
@@ -804,7 +814,7 @@
               <a class="about-link" href="#">About</a>
             </li>
             <li class="footer-bottom__nav-items footer-bottom__nav-items-link">
-              <a class="blog-link" href="#">Blog</a>
+              <a class="blog-link" href="blog.html">Blog</a>
             </li>
             <li class="footer-bottom__nav-items">
               <a class="contact-link" href="#">Contact</a>
