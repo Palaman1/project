@@ -1,4 +1,14 @@
 @font-face{
+  font-family: 'Rubik-Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: local('Rubik-Bold'),
+        url('../fonts/Rubik-Bold.woff2') format('woff2'),
+        url('../fonts/Rubik-Bold.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face{
   font-family: 'Rubik-Medium';
   font-weight: 500;
   font-style: normal;
@@ -16,6 +26,16 @@
   src: local('Rubik-Regular'),
         url('../fonts/Rubik-Regular.woff2') format('woff2'),
         url('../fonts/Rubik-Regular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'Rubik-Light';
+  font-weight: 300;
+  font-style: normal;
+  src: local('Rubik-Light'),
+        url('../fonts/Rubik-Light.woff2') format('woff2'),
+        url('../fonts/Rubik-Light.woff') format('woff');
   font-display: swap;
 }
 
@@ -56,5 +76,25 @@
   src: local('Poppins-Bold'),
         url('../fonts/Poppins-Bold.woff2') format('woff2'),
         url('../fonts/Poppins-Bold.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'Poppins-Semi-bold';
+  font-weight: 600;
+  font-style: normal;
+  src: local('Poppins-Semi-bold'),
+        url('../fonts/Poppins-Semi-bold.woff2') format('woff2'),
+        url('../fonts/Poppins-Semi-bold.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'Nunito-Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: local('Nunito-Bold'),
+        url('../fonts/Nunito-Bold.woNunito-Boldff2') format('woff2'),
+        url('../fonts/Nunito-Bold.woff') format('woff');
   font-display: swap;
 }
